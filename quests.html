@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests - Hallownest</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=m4ruZvTt68SY&format=png&color=000000" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://img.icons8.com/?size=100&id=m4ruZvTt68SY&format=png&color=000000" alt="Hallownest Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Hallownest
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Map.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quests.html">Quests</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-secondary ms-auto">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Quests in Hallownest</h1>
+        <p class="lead text-center">Embark on epic quests, uncover secrets, and earn rewards as you explore the ruined kingdom.</p>
+
+        <div class="row mt-4" id="questList">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Defeat the Mantis Lords</h5>
+                        <p class="card-text">Challenge the Mantis Lords and prove your worth.</p>
+                        <p><strong>Objective:</strong> Defeat all three Mantis Lords in combat.</p>
+                        <p><strong>Reward:</strong> Mark of Pride.</p>
+                        <p><strong>Difficulty:</strong> <span class="badge bg-warning">Medium</span></p>
+                        <button class="btn btn-primary start-quest">Start Quest</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore the Abyss</h5>
+                        <p class="card-text">Uncover the secrets of the Abyss and discover its history.</p>
+                        <p><strong>Objective:</strong> Navigate through the Abyss and find the whats hidden within.</p>
+                        <p><strong>Reward:</strong> Shade Cloak,???,???.</p>
+                        <p><strong>Difficulty:</strong> <span class="badge bg-danger">Hard</span></p>
+                        <button class="btn btn-primary start-quest">Start Quest</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Rescue Zote the Mighty</h5>
+                        <p class="card-text">Save from the pincers of the Vengefly King Zote the Mighty who is located in Greenpath.</p>
+                        <p><strong>Objective:</strong> Save Zote from the Vengefly King but be careful, if you're too late something bad will happen.</p>
+                        <p><strong>Reward:</strong> Zote's gratitude </p>
+                        <p><strong>Difficulty:</strong> <span class="badge bg-success">Easy</span></p>
+                        <button class="btn btn-primary start-quest">Start Quest</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Defeat the Hollow Knight</h5>
+                        <p class="card-text">Face the Hollow Knight in the Black Egg Temple</p>
+                        <p><strong>Objective:</strong> Defeat the Hollow Knight.</p>
+                        <p><strong>Reward:</strong> ???.</p>
+                        <p><strong>Difficulty:</strong> <span class="badge bg-danger">Hard</span></p>
+                        <button class="btn btn-primary start-quest">Start Quest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2>Submit Your Quest</h2>
+            <form id="questForm">
+                <div class="mb-3">
+                    <label for="questName" class="form-label">Quest Name</label>
+                    <input type="text" class="form-control" id="questName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="questDescription" class="form-label">Quest Description</label>
+                    <textarea class="form-control" id="questDescription" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="questReward" class="form-label">Reward</label>
+                    <input type="text" class="form-control" id="questReward" required>
+                </div>
+                <div class="mb-3">
+                    <label for="questDifficulty" class="form-label">Difficulty</label>
+                    <select class="form-select" id="questDifficulty" required>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="submitMessage" class="mt-3 text-success" style="display: none;">Quest Submitted!</div>
+        </div>
+        <div class="container mt-5">
+            <h2 class="text-center">Quest Bosses:</h2>
+            <div id="locationsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVEhUVEhUVFRUWFRUPDxAVFRIXFhYVFRUYHSggGBolHhUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUvLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADgQAAEDAgQCCQMEAgEFAQAAAAEAAhEDIQQSMUFRYQUTIjJxgZGhscHR8AYUUuEVQiNicpKi8Qf/xAAZAQEBAQEBAQAAAAAAAAAAAAABAAIDBAX/xAAlEQEBAQACAgICAQUBAAAAAAAAARECEiExA0ETcVEEIjKBsZH/2gAMAwEAAhEDEQA/APhqtEGK6bdVqQFqKyqQUUUUUkVwjy281Y70eScBasa+aJ7bqntVmILlSuFRQUVhW8aeATKWogTxnRMnnASonvomZiEBpcU9atLUXQoYUEQdTcH+Q0t5goK2Dha/FyzR2jEotVOlacpIm5GscgtFSg147O3lCp8dsXZzVE1tAkEjZVkg9qyx1p0tRNyiNb8ISlWYUUUUQkUUUUkUUUUkUUUUkUUUUkUUR06ZcYGvopAUVha8DSpOnrajmaRDc08Z9k8ZtwW4RSPa8UdFvbjx+Fb8OW3GyN0Zg7iQQPldJxs9jSH07TzQOaQt1anMgCwPrc/cK31BF2EfCb8a7OfCIDjM7LVh6jRYgnfwRVHsd3bnbb1WZwme1oaYkEERoeOhulBhALuYWj90NHiPC4KZULS1waQZbMbiCPuuuS/Y1kxLLiNwCrrsuPAeqKo+W2/1JA8DoflG4Sxrv+gyeYMLOS6i6dOGmWm8X2CTWbDiDxXR/dW7s22IIWOu0F4kwC0GfJXPjMmKUGIe0hsajXmnMqgGWDQXnfTRIyN/lIHv4K5BNhE25mVmW7pbhjWnvAi2uoRNLXnq2DMXODQYgAuMA+65syI/jN99bD3TsLVLXNcO91gI8iCPdbnyW+KOr2fT2DYauUCG0w2lTgxDKdNhbfiS95J3lZsF0N1zzSY453Mf1Y7JBqNYXhrrTBDXDxhdPphjX5aggseGVGniCCwz/wCVJD0E8NxNB1ItzivSDYyknPUawt8CHEea9c4zpccd8vE0MaGjK5ptw95CVWqteQGjLMyTxOi3/qfq243EhvaaMTWiO6R1ro8oXNu4iwA4DabLxXlbM13w2liS25uD8i2qleu10Q0yD4DW4WdswRsDPn+SnOxBAAygkjUi5lXa5lGNhotcLLOymWODwA7KQYNwY4rPRJBLpggLR/kCQbNnzW+/G+b4oyrxTuuqGoQG5jcNEBphZa2HLVdJ5ERqSCPst3WtqDgY3sfJZk48/wBnzHKVgLTgqIdIkeYk+IVdURUgXgzfkJXPpcla0gtOiqFpfiJOYt00iw5p5r0yOHKEzhxv2NrGwNnUx4Ja2Yaoy7TxsT9eCJuDlxyiRaIvM8IT02TFrAojqNhxB2KOs4ENjaRzjZc89ktolSFoZSgtJ8/NBWZFvH+1rp4Wl1GwrYEdUS0Hj9EWFEg8k5/ct8NJxWxaD5wsjzY+3K8pjVYaul3kzPCfvTu3eeCjsYXagROnkl1KSjWbLO8/WnIGlueRKprgY2PHSfsifTNo3AQGksZYTHsMTE89VdKrtEEg30t+BBRqFsx+fllHvPxtCd+wt+4Ig8uEXn83TalqVt3/AC0W9QlU6dxOsj3ROpEAgn/YCPk/CZqXh4AMkgTAIn35IK404Btue/wUT2QAOU+Bn+kRZ2QeZHwfiU54xG4zK/KWMayGsYQ3N23AXec25SARJGzZjnsn036zwnxI0+UjwCbPsH4hgaTbVw9AAfrKGpAdl/iTfeZn7IXvJjkAPT/4gc0m6bf4Uep6MxvWAN7zA4E0yOwKr82aDrljM6Bx5X6GPpGnP/MWVG9pjpDYIu1zdxsQQZXk+h8YaTpguESQOMEA+6+2/pD9L4U4elWxuUnEdmkyo7qRVDgS0kSC97gCQ06NiAvRx+XjOG1zvC3l4fCBQFieJnwAlKa+x4zPkL/VfSemf0OKWNyUxnwv7yhSIDia9NlRzc4yntEAFzQ4T3ZPFcrD/penU6Sfhnsdh6LH1zUJJnD0KbHxWc521mOk2JcBoQvPeP3HR5bECHgaBz58rAH3KzVb+RDfRasZlzODZLZIaXCHFgMNkbGIlIpNvHGPlPKbcUJeYzN5j2R4aneONvcfZG9kuJ5qObBWOvnToqdIWnbMbeEj6pLqWvIW5wfz0T6ZIkcR+fVQM/PZavGWDU6PwHWVQw1G0rE5nGGiBKyVJk38+IT8QwTPgfK4+ilWnA9B7A/VYvH+DrM3gmNpjexVMZdTEGTbQQPRZkybSBzYT8FjalJwdTeWEaEJDDtxVvFh5/KJ48xJVfmJJMk3J4lAorhZ9k51dzhHC/A8Eyo+WAnXtD1cD9SlMYJFzpJkRBk6XuNL2Q5pEcyfVdNueWcHSf2SDtcfB+iCk6JUgDXVSlUjYFG+i1BiMNTKVjPC/HRFVqFzi46uJJsGiSZNhYeAXoxjSsqotTZ2VhqcGs7ggyrS5iWWrNh0mqw2jwnyRsZMjkPYymObMDmPafujNE7KnHytZ3DdFiHSZHj5m/2THU0QpQnrVpVVk9rjfwVBi1O7oUDE9RpDqdlBRstLG7JwaIhanDRrnsponMstlNkeqXUbJV08HSKD3NnKYzNLTzBIMHzA9F9GH66/yGJoUMZRpswxxDHUwwllagW2pvFTNBiYIi4Ji4C8I2q/J1U9jPny2jNET6KdSSLHKeKPx6u2Ps/TmMpVcRi6RqfscUHsp0q1No66pTAY9zWVCWhtWoMti7uhoEwVw/8A9cxr3UqDSwsa4BuZ5LcTX6s1BUFRts1MHqXAkaukLB+pekqOKbSx9Kq2hjKeQ16D5FOvUYW5arC7/jfGXum5EDUAHynT+MbiK9SuxgptqEODAIDJaMwHLNm9Vnj8fmG8nDdTkoOqutrWxdMZSzAlb6az2YabYVFl1u/bhKyXVeGLSWsgo8RT90RR1bx4JzwtZAwSSRbLl8bGPdC5sgep8Sf6Wjq7qnthZ6nSHNuhFJa2MkKjTvAR0WuW+kQdFb2kmwXT6udVbKQWPwns5TKDiYhNqYctC6jWIKtOWlP4ZIu7nNp78vlCIGi6VBgyxyhYH04lHLhklMoXBvmmdUICGjSkrfg6tFgIqtqOM2yFrRHOQrjN9q0BCFHUN0K6VhFoZCzq0y4jZlQ0kLCjDlpBDYKJw3Ct4RNCZAnVyoWKOMKSnwiX006nTTMJQ6x2XM1liZecrbCdeKSH6ckSRKdY2R00/G4VrKha2o2sBBztBDTIBIve0x5JYYmRIWIqFGQ4yBlAMEwXSQIba5vPgCjahGq1g1WVHRcBKEog1MC3vvyVE3hU4JZVUusYshpvi3NU4oVi3yTrgwUVVkJbSmxK1AQ5iLq4TMiEgqw6VRHauhqNumkbo6bJujPpazsEFHhMQ+nUbUYS1zTLXDVpGhumvaEBpo6rVVLkk3JMnmTcq2ssoWphfCcRTbIQj1VFqkXTbASMRRutgao9llm8dh1la2CkYpt1vdSm6RVw7is8uNwylkqKKLKRRWopIE1hSwrBTEcUxizymBy3KB1BZKBRlyWqqIVYUhMptVIlsKaHKhTR9VEcxPH1W5KyBxUyK3BXmSgAorq2KKSrpb08JdUKsRBKihUC5tDYVoYswCa0lb4inQhcFASpkJWmQPQgEJ4pq2tE3Vh0gXRCyJzYUIRiLKWUZQopRhhXMlCohDCN14QJjStQI0QEAlMm0I6YsnE5JVIy1CQvM2KbIVStKWrVgK8qcSBEFeRSEhSitMoZcwzhxbeQ0hrtDEEgjWNtJSQAJ1NLaE1jVqM041CQBsJiwGpm5380w1iWBkCASZjtGeJQMYnBq6SM6SGJeVOqIGhSLiERCj0yjTLg4j/USbgQJA31uRYIRQVOVlQoLM4KgjcERfIDYHZm4ADjJntHU8p0WMIQm00sBECtRNTAilIa4prWLcZSUbWK2tRlOBG4XMx7s7G5ADlcYfUl0QwRcjU8lkR1HJRRTFdaQHNEQ6JsCezMQYka7apSIoVitKUUUQltK0VKxdBcZhoaOTWiAPIBIe+dY0AsA0WEbb213UBTEczVW+xslZlYcnRjAHJgMpbCjLFxjZZCtoTDTRUad1YtE1qKm1aHUrKMpLr1Y0rImdQqq1QzhOwmJ/JS29Ig2iP/AHJ9FbxnteUdTSwFbcY1xI0jSxk+QUcJBu1pOzjlPj/Szsvojaw6x8THhqjzgCSs1XC5e25511a3MB6OSqlMvaGtJdBkHKAfMTzR2s+jjr4Ws0nj4FKxGOa0kE6HxKyYBrAJ6xofJkdoRsOzsddzrySMXgADnzwCTLu+0kmdLFqbz5ddkE4zXSovz3CftELk9HYrIC0DNLhqQDoBb7Qug6uYns/9ved8rfDnLBZ5G5qjWLOzGOd3WZrcMsz4lLf0oG6tv/G/yrvx9rK1PYlkJB6UFoEzwm33TqGPc0yGgOEwIbVNwRdngfJHfjfSygLUMIXvjUO82uYPWYQVMUDEAMGUZjOeSNTAuJtZZvKHDwFYCQ7H0+yAYMHM4iGnhDdvUoDiXSWsfG8gZc3AS4hXeHK6FMJ7AuezGBvfIBN7DPtxBTR0iIJF4EnskGOOui3OfFmytsoaj5VYLEioJF/CfqOae6kuk8zYz6Y5SytD6aXlWbCU+/JBlTy1AQs4SSFSY5qotRhAoFZCgQhspkojSKcKgCB1RbyDXNLIThf8hNdTRMpLnOLWgphOpsTadMJrGLpOLFomsUDE9oTGsXTGdee6baC02uIvw/JC5dWplADd2gk7yb/15LvdMtGbTNYdnYkghpI3uF53FayAADoOAXg/qPFtjv8AH5h1LEAXlxPjln0uqBDnd7KI5v8ARY1Fw/Jft0x1qb4IaKhLTOYRldA4cETuknDumBwFguQHQrLyt/msnhno6WIxPXATAeD3tJbGhUoVHg9W0B7tZ1bG2ui5gKdh8SWzG+vGyJ8u3auvh0cQ97BdjdZJBk6hJwxb3nOI4R3vE8Fkq4kkRJg680tr4TflnZTj4bqzjORhLhcwNdd4VfvHMGW4O8i8bCVmp4gtBixO/LglPqE6ovyfcPVtpYsgkt7xETEQdz/aF3WSO3mm0h2m8E+SxtMKFyz+Tx5XVvByd9xI2DXAtJHElK/c3hstb43vqssqlX5L9Lq6TcW1oIBqRwkR6QlYfFZTckCLaOI5DgsYKtzpT+Wrq14jFk6OJ8fum4OvIgnKcwDSBoC0h3louatmB4SAHEMMjTNo7yTw528lZMeg6DiIy5TDfC7QfKdV1ixc3oJhFjEgGbzu0D4jyXXIX0/j/wAY8vP2yuppTqa1OCW4LWDWVzEotWp4SHLNjRJaoWpoaSr6orOLWbJKholamiNUurUVkOlthPoUs8wWiP5PZT14ZiJWFykrOnDoTGNWY4pnH8t9/ZGzGs/kNYV2n8rK2ManhiXT4prSusYomprUlG1y0yw9OYIlpqNN2DNG/ZvY7LyVZwk73tyEkr3zrgjiCPZeLxWHd1bSW9wlhIFu8Tc8brxf1XD7jv8AFy+mJwhCiayfNQjZeHHcKibQpy6OR+FQZp4/nyrrRoAFSOozKqcFWFRCpaq1Mdk6AtHOEBp5SCYc3lcXWrwsGkKJ+IySMs89lQoWmR6hHW74WkqwVbGkmBcpnVC17bnQTrCJKRtyakO5be8qBgcZDDB0A5cUVBxByzDdTNxqtdbEZGuDAPGQ70gLtOMs2/8AGLXLLbqZU1xEy3gPIxcJ1KoHyIjsne1iNJXOcZa1rGnUaoBB0gaDcxEosPhy92QamwHE6hXSw8uY3+Ue9k8eN9wWx6/onBFnbcRLhMDaYNzvstzkyFRC+vJkx47dpbKsBwhpzCJIktuDLeBtE8CUIYFbmqFqUVUYFke1bHNSnIsMC2wVOcolvQQPMpT2poKfWwZbTbUlsPJAAMuEayNlmlzXNRMoynBiaGQjqdeVc4cBf28UNC521Eeqii+bv9z0fT17NB4D4TGgqKL6seWrIKgKtRIE0pWKw4NNzY1l0cTM/RRRVmxPNYjAZaecGbm0Ws4AEHfX4Q/si6q1sQXNnTSGk/RWovHfi47n6du1z/0qlS/5QOf9ifZVWomCYgD2k29gooufWZf9t75BjG2a7Yj8CmLoFtiIPwZv8qKLF4zzf0pfR+HZLAYNswPkCR8+ybhMHNCpVH+sWPdcC68+Cii6ceMyfqi0qkxj2gGGmCZ8zZZxQYDBdIGpG/IKKLjbLJcaw5tGXNDWkaEE943EJYJJe0iblx5Rw8dFai6XjmCVtpYMvII1yAnxFj7wPNZaFImm48JPL8sooul4zx/tnSsNSlrj+WEosBhy59hIAc53JoFyoouXHhL1at9uz+l6E4guI7sn6fVNbgoxYEWEkcgDI+nqrUXq4cZ1n7cuV8131UqKL1OJVR6WXqKIKi9cTFdKuaT2LXvroSOKii4/Nysnh04SE/5oxofMeOvHZAemCf8AX2nx+iii8n5ef8uvSKPTHLfwt91f+Wk2YYvuJ5Xj6KKIny87fZ6Rv6OrlwJIg2Wh7rq1F7eP+Ljfb//Z" class="d-block w-100" alt="the Most Vengeful Fly">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vengefly King</h5>
+                            <p>Defeat the Vengefly King in order to save Zote the Mighty from his fate.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*266GXsbyMcqTnNgHZQvqEg.jpeg" class="d-block w-100" alt="3 Lords whose job is Protecting their territory from Deepnest">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>White Palace</h5>
+                            <p>The Mantis Lords, Protecting their territory, Mantis Village, from the monsters who try to escape Deepnest</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.redd.it/hrmeg642i8cb1.jpg" class="d-block w-100" alt="The Hollow Knight">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Hollow Knight</h5>
+                            <p>Defeat the Hollow Knight and depending on your choices, either break the cycle or take his place in chains</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#locationsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#locationsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+    </div>
+
+    <footer class="footer mt-5 py-4 bg-light">
+        <div class="container text-center">
+            <p>&copy; 2025 Hallownest. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

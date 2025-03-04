@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=m4ruZvTt68SY&format=png&color=000000" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://img.icons8.com/?size=100&id=m4ruZvTt68SY&format=png&color=000000" alt="Hallownest Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Hallownest
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Map.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quests.html">Quests</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-secondary ms-auto">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-5">
+        <h1 class="text-center">Locations you can access in the ruined kingdom of Hallownest</h1>
+        <div class="map-container">
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/0/05/Screenshot_HK_City_of_Tears_07.png/revision/latest?cb=20190219044533" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/0/05/Screenshot_HK_City_of_Tears_07.png/revision/latest?cb=20190219044533" alt="City of Tears - A majestic city where rain pours from the cracks of the ceiling above">
+                </a>
+                <p>City of Tears</p>
+            </div>
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/b/b1/Screenshot_HK_Aluba_01.png/revision/latest?cb=20190407205305" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/b/b1/Screenshot_HK_Aluba_01.png/revision/latest?cb=20190407205305" alt="Queen's Gardens - A vibrant and quiet garden where the queen was said to go to relax">
+                </a>
+                <p>Queen's Gardens</p>
+            </div>
+            <div class="map-item">
+                <a href="https://i.pinimg.com/736x/f6/cb/98/f6cb98187528a438388210f07a303f0c.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/f6/cb/98/f6cb98187528a438388210f07a303f0c.jpg" alt="Dirtmouth - A quiet town above the ruins of the kingdom">
+                </a>
+                <p>Dirtmouth</p>
+            </div>
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/7/7f/Greenpath_South_Area.png/revision/latest?cb=20190312031257" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/7/7f/Greenpath_South_Area.png/revision/latest?cb=20190312031257" alt="Greenpath - an area of the kingdom overgrown with vegitation">
+                </a>
+                <p>Greenpath</p>
+            </div>
+            
+            <div class="map-item">
+                <a href="https://i.pinimg.com/736x/e9/87/df/e987dfbcb80a597e57e5222aa5713a26.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/e9/87/df/e987dfbcb80a597e57e5222aa5713a26.jpg" alt="Crystal Peaks - A sparkling cavern where miners mine the crystal that are found there">
+                </a>
+                <p>Crystal Peaks</p>
+            </div>
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/4/43/Screenshot_HK_Deepnest_04.png/revision/latest/scale-to-width-down/250?cb=20190222001550" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/4/43/Screenshot_HK_Deepnest_04.png/revision/latest/scale-to-width-down/250?cb=20190222001550" alt="Deepnest - a spider filled area, near the darkest parts of the kingdom">
+                </a>
+                <p>Deepnest*</p>
+            </div>
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/1/12/Hive_Hive_Guardian.png/revision/latest?cb=20190313012632" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/1/12/Hive_Hive_Guardian.png/revision/latest?cb=20190313012632" alt="The Hive - A hive filled with different kinds of bees in service to the queen">
+                </a>
+                <p>The Hive*</p>
+            </div>
+            <div class="map-item">
+                <a href="https://i.pinimg.com/736x/bb/69/d5/bb69d50727d83458e009e7e12818bade.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/bb/69/d5/bb69d50727d83458e009e7e12818bade.jpg" alt="Ancient Basin - Ancient ruins of previous kingdoms">
+                </a>
+                <p>Ancient Basin*</p>
+            </div>
+            <div class="map-item">
+                <a href="https://i.ytimg.com/vi/RReJQqP3w2s/maxresdefault.jpg" target="_blank">
+                    <img src="https://i.ytimg.com/vi/RReJQqP3w2s/maxresdefault.jpg" alt="Fungal Wastes - an area overgrown with bouncymushrooms, spores and explosive jellyfish">
+                </a>
+                <p>Fungal Wastes*</p>
+            </div>
+            <div class="map-item">
+                <a href="https://static.wikia.nocookie.net/hollowknight/images/d/df/Screenshot_HK_The_Pale_King_01.png/revision/latest?cb=20190403033354" target="_blank">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/d/df/Screenshot_HK_The_Pale_King_01.png/revision/latest?cb=20190403033354" alt="Kingdoms Edge - the windy outskirts of the kingdom where the colloseum resides">
+                </a>
+                <p>Kingdoms Edge*</p>
+            </div>
+            
+        </div>
+        
+        <div class="alert alert-warning mt-3">
+            <strong>Note:</strong> Locations marked with <strong>*</strong> are dangerous. Proceed with caution.
+        </div>
+        <div id="locationCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/0/05/Screenshot_HK_City_of_Tears_07.png/revision/latest?cb=20190219044533" class="d-block w-100" alt="City of Tears">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>City of Tears</h5>
+                        <p>A majestic city where rain pours from the cracks of the ceiling above.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/b/b1/Screenshot_HK_Aluba_01.png/revision/latest?cb=20190407205305" class="d-block w-100" alt="Queen's Gardens">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Queen's Gardens</h5>
+                        <p>A vibrant and quiet garden where the queen was said to go to relax.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://i.pinimg.com/736x/f6/cb/98/f6cb98187528a438388210f07a303f0c.jpg" class="d-block w-100" alt="Dirtmouth">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Dirtmouth</h5>
+                        <p>A quiet town above the ruins of the kingdom.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/7/7f/Greenpath_South_Area.png/revision/latest?cb=20190312031257" class="d-block w-100" alt="Greenpath">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Greenpath</h5>
+                        <p>An area of the kingdom overgrown with vegetation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://i.pinimg.com/736x/e9/87/df/e987dfbcb80a597e57e5222aa5713a26.jpg" class="d-block w-100" alt="Crystal Peaks">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Crystal Peaks</h5>
+                        <p>A sparkling cavern where miners extract crystals.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/4/43/Screenshot_HK_Deepnest_04.png/revision/latest/scale-to-width-down/250?cb=20190222001550" class="d-block w-100" alt="Deepnest">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Deepnest</h5>
+                        <p>A spider-filled area near the darkest parts of the kingdom.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/1/12/Hive_Hive_Guardian.png/revision/latest?cb=20190313012632" class="d-block w-100" alt="The Hive">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Hive</h5>
+                        <p>A hive filled with bees serving their queen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://i.pinimg.com/736x/bb/69/d5/bb69d50727d83458e009e7e12818bade.jpg" class="d-block w-100" alt="Ancient Basin">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ancient Basin</h5>
+                        <p>Ancient ruins of previous kingdoms.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://i.ytimg.com/vi/RReJQqP3w2s/maxresdefault.jpg" class="d-block w-100" alt="Fungal Wastes">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fungal Wastes</h5>
+                        <p>An area filled with bouncing mushrooms, spores, and explosive jellyfish.</p>
+                    </div>
+                </div>
+                <div class="carousel-item map-item">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/d/df/Screenshot_HK_The_Pale_King_01.png/revision/latest?cb=20190403033354" class="d-block w-100" alt="Kingdom's Edge">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kingdom's Edge</h5>
+                        <p>The windy outskirts of the kingdom where the coliseum resides.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#locationCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#locationCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-center mt-5">
+            <a href="about.html" class="btn btn-primary">Learn More About Hallownest</a>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5">
+        <p>&copy; 2025 Hallownest. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
